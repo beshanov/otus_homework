@@ -3,6 +3,8 @@ package service;
 import dao.QuestionDao;
 import domain.Question;
 
+import java.util.List;
+
 public class QuestionServiceImpl implements QuestionService {
 
     private QuestionDao questionDao;
@@ -23,5 +25,9 @@ public class QuestionServiceImpl implements QuestionService {
         Question question = questionDao.getQuestionById(id);
         String correctAnswer = question.getAnswer().trim();
         return userAnswer.equalsIgnoreCase(correctAnswer);
+    }
+
+    public List<Question> getAllQuestions() {
+        return questionDao.getAllQuestions();
     }
 }

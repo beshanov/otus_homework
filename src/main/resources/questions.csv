@@ -1,5 +1,5 @@
 0,Сколько примитивных типов в Java?,8
-1,Сколько примитивных типов в Java?,8
+1,Сколько байтов в содержит  тип int?,4
 2,String - mutable или immutable?,immutable
-3,String - mutable или immutable?,immutable
-4,String - mutable или immutable?,immutable
+3,Сколько зарезервированных слов в java?,50
+4,JVM JDK JRE: Что из перечисленного содержит javac?,JDK

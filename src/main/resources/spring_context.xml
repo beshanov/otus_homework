@@ -14,4 +14,8 @@
     <bean id="questionService" class="service.QuestionServiceImpl">
         <constructor-arg name="questionDao" ref="questionDao"></constructor-arg>
     </bean>
+
+    <bean id="presentationService" class="service.PresentationServiceImpl">
+        <constructor-arg name="questionService" ref="questionService"></constructor-arg>
+    </bean>
 </beans>

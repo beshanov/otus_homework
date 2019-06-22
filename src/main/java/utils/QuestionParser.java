@@ -10,6 +10,7 @@ import java.util.Scanner;
 
 public class QuestionParser {
     private String fileName;
+
     public QuestionParser(String fileName) {
         this.fileName = fileName;
     }
