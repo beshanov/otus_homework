@@ -1,6 +1,6 @@
-package service;
+package com.beshanov.service;
 
-import domain.Question;
+import com.beshanov.domain.Question;
 
 import java.util.List;
 

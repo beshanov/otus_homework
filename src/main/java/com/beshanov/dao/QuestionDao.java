@@ -1,6 +1,6 @@
-package dao;
+package com.beshanov.dao;
 
-import domain.Question;
+import com.beshanov.domain.Question;
 
 import java.util.List;
 

@@ -1,14 +1,18 @@
-package service;
+package com.beshanov.service;
 
-import dao.QuestionDao;
-import domain.Question;
+import com.beshanov.dao.QuestionDao;
+import com.beshanov.domain.Question;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class QuestionServiceImpl implements QuestionService {
 
-    private QuestionDao questionDao;
+    private final QuestionDao questionDao;
 
+    @Autowired
     public QuestionServiceImpl(QuestionDao questionDao) {
         this.questionDao = questionDao;
     }

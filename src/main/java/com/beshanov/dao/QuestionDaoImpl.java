@@ -1,16 +1,18 @@
-package dao;
+package com.beshanov.dao;
 
-import domain.Question;
-import utils.QuestionParser;
+import com.beshanov.domain.Question;
+import com.beshanov.utils.QuestionParser;
+import org.springframework.stereotype.Repository;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+@Repository
 public class QuestionDaoImpl implements QuestionDao {
 
-    private QuestionParser questionParser;
+    private final QuestionParser questionParser;
 
     public QuestionDaoImpl(QuestionParser questionParser) {
         this.questionParser = questionParser;
