@@ -1,4 +1,4 @@
-package domain;
+package com.beshanov.domain;
 
 public class Question {
     private int id;
